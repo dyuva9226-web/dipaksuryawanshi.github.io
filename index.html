@@ -1,169 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dipak Khandu Suryawanshi — Professional</title>
-  <meta name="description" content="Personal professional website of Dipak Khandu Suryawanshi. Contact: dipaksuryawanshi205@gmail.com" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ER Dipak Suryawanshi - Home</title>
   <style>
-    /* Simple professional style */
-    :root{--bg:#f7f9fc;--card:#ffffff;--muted:#6b7280;--brand:#0b5fff}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#0f172a}
-    .container{max-width:1000px;margin:24px auto;padding:24px}
-    header{display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#06b6d4);display:grid;place-items:center;color:#fff;font-weight:700}
-    nav{display:flex;gap:12px}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600}
-    .lang{padding:8px;border-radius:8px;background:#fff;border:1px solid #e6eef8}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-top:28px}
-    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 24px rgba(12,23,55,0.06)}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted);margin:8px 0 16px}
-    .contact-list{display:flex;flex-direction:column;gap:8px}
-    .chip{display:inline-block;padding:8px 12px;border-radius:999px;background:#eef2ff;color:#0b5fff;font-weight:700}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
-    @media (max-width:880px){.hero{grid-template-columns:1fr}}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 90%;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      background: white;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #0056b3;
+      color: white;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="brand">
-        <div class="avatar">DS</div>
-        <div>
-          <div style="font-weight:800">Dipak Khandu Suryawanshi</div>
-          <div style="color:var(--muted);font-size:13px">Professional • Learner • Creator</div>
-        </div>
-      </div>
-      <div style="display:flex;gap:12px;align-items:center">
-        <nav>
-          <a href="#home" data-key="nav.home">Home</a>
-          <a href="#about" data-key="nav.about">About</a>
-          <a href="#contact" data-key="nav.contact">Contact</a>
-        </nav>
-        <select id="lang" class="lang" aria-label="Select language">
-          <option value="en">English</option>
-          <option value="mr">मराठी</option>
-          <option value="hi">हिन्दी</option>
-        </select>
-      </div>
-    </header>
-
-    <main class="hero" id="home">
-      <div class="card">
-        <h1 data-key="home.title">Hi, I’m <span style="color:var(--brand)">Dipak Khandu Suryawanshi</span></h1>
-        <p class="lead" data-key="home.subtitle">Professional portfolio — developer, student, and educator. I build reliable solutions and enjoy mentoring learners.</p>
-
-        <div class="contact-list">
-          <div><strong data-key="label.email">Email:</strong> <a href="mailto:dipaksuryawanshi205@gmail.com">dipaksuryawanshi205@gmail.com</a></div>
-          <div><strong data-key="label.phone">Phone:</strong> <a href="tel:+919226747818">+91 9226747818</a></div>
-          <div><strong data-key="label.location">Location:</strong> India</div>
-        </div>
-
-        <div style="margin-top:16px;display:flex;gap:10px">
-          <a class="chip" href="#contact" data-key="cta.contact">Contact Me</a>
-          <a class="chip" href="#about" data-key="cta.resume">View About</a>
-        </div>
-      </div>
-
-      <aside class="card">
-        <div style="font-weight:700;margin-bottom:8px" data-key="aside.title">Quick Facts</div>
-        <div style="color:var(--muted);font-size:14px">
-          <div><strong data-key="fact.experience">Experience:</strong> Learning & Building</div>
-          <div><strong data-key="fact.skills">Skills:</strong> Web, JS, HTML, CSS</div>
-          <div><strong data-key="fact.open">Open to:</strong> Projects, Mentoring</div>
-        </div>
-      </aside>
-    </main>
-
-    <section id="about" style="margin-top:22px" class="card">
-      <h2 data-key="about.title">About</h2>
-      <p data-key="about.bio">I am Dipak Khandu Suryawanshi — passionate about technology and education. I enjoy building practical projects and helping others learn through clear explanations and hands-on exercises.</p>
-    </section>
-
-    <section id="contact" style="margin-top:18px" class="card">
-      <h2 data-key="contact.title">Get in touch</h2>
-      <p data-key="contact.lead">Send a message — I typically respond within 24–48 hours.</p>
-      <form id="contactForm">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-          <input name="name" placeholder="Your name" required />
-          <input name="email" type="email" placeholder="you@example.com" required />
-          <input name="phone" placeholder="Phone (optional)" />
-        </div>
-        <div style="margin-top:12px">
-          <textarea name="message" rows="6" placeholder="Write your message..."></textarea>
-        </div>
-        <div style="margin-top:12px">
-          <button type="submit" class="chip" data-key="contact.send">Send Message</button>
-          <span id="formMsg" style="margin-left:12px;color:var(--muted);font-size:14px"></span>
-        </div>
-      </form>
-    </section>
-
-    <footer>
-      <div style="margin-top:18px;color:var(--muted);font-size:13px">© <span id="year"></span> Dipak Khandu Suryawanshi. All rights reserved.</div>
-    </footer>
+    <h1>Welcome to ER Dipak Suryawanshi</h1>
+    <p>Explore courses and login with your mobile OTP</p>
+    
+    <!-- Links -->
+    <a href="courses.html">📚 View Courses</a>
+    <a href="login.html">🔑 Login with OTP</a>
   </div>
-
-  <script>
-    // Translations
-    const T = {
-      en: {
-        'nav.home':'Home','nav.about':'About','nav.contact':'Contact',
-        'home.title':'Hi, I\'m <span style="color:var(--brand)">Dipak Khandu Suryawanshi</span>',
-        'home.subtitle':'Professional portfolio — developer, student, and educator. I build reliable solutions and enjoy mentoring learners.',
-        'label.email':'Email:','label.phone':'Phone:','label.location':'Location:',
-        'cta.contact':'Contact Me','cta.resume':'View About',
-        'aside.title':'Quick Facts','fact.experience':'Experience:','fact.skills':'Skills:','fact.open':'Open to:',
-        'about.title':'About','about.bio':'I am Dipak Khandu Suryawanshi — passionate about technology and education. I enjoy building practical projects and helping others learn through clear explanations and hands-on exercises.',
-        'contact.title':'Get in touch','contact.lead':'Send a message — I typically respond within 24–48 hours.','contact.send':'Send Message'
-      },
-      mr: {
-        'nav.home':'मुख्यपृष्ठ','nav.about':'बद्दल','nav.contact':'संपर्क',
-        'home.title':'नमस्कार, मी <span style="color:var(--brand)">दिपक खांडू सुर्यवाँशी</span>',
-        'home.subtitle':'व्यावसायिक पोर्टफोलिओ — डेव्हलपर, विद्यार्थी आणि प्रशिक्षक. मी उपयोगी सोल्यूशन्स बनवतो आणि विद्यार्थ्यांना मार्गदर्शन करायला आवडते.',
-        'label.email':'ईमेल:','label.phone':'फोन:','label.location':'स्थान:',
-        'cta.contact':'संपर्क करा','cta.resume':'बद्दल पहा',
-        'aside.title':'त्वरित माहिती','fact.experience':'अनुभव:','fact.skills':'कौशल्ये:','fact.open':'उघडे:',
-        'about.title':'बद्दल','about.bio':'मी दिपक खांडू सुर्यवाँशी — तंत्रज्ञान आणि शिक्षणाबद्दल उत्साही. मला उपयुक्त प्रकल्प तयार करणे आणि स्पष्ट स्पष्टीकरणाद्वारे इतरांना शिकवणे आवडते.',
-        'contact.title':'संपर्क करा','contact.lead':'एक संदेश पाठवा — मी सामान्यत: 24–48 तासांत उत्तर देतो.','contact.send':'पाठवा'
-      },
-      hi: {
-        'nav.home':'मुख्य पृष्ठ','nav.about':'बारे में','nav.contact':'संपर्क',
-        'home.title':'नमस्ते, मैं <span style="color:var(--brand)">दिपक खांडू सुर्यवांशी</span>',
-        'home.subtitle':'प्रोफेशनल पोर्टफोलियो — डेवलपर, विद्यार्थी और प्रशिक्षक। मैं उपयोगी सॉल्यूशन्स बनाता हूँ और सीखने वालों का मार्गदर्शन करना पसंद करता हूँ।',
-        'label.email':'ईमेल:','label.phone':'फोन:','label.location':'स्थान:',
-        'cta.contact':'संपर्क करें','cta.resume':'बारे में देखें',
-        'aside.title':'त्वरित जानकारी','fact.experience':'अनुभव:','fact.skills':'कौशल:','fact.open':'खुले हैं:',
-        'about.title':'बारे में','about.bio':'मैं दिपक खांडू सुर्यवांशी — प्रौद्योगिकी और शिक्षा के प्रति उत्साही। मुझे व्यावहारिक प्रोजेक्ट बनाना और स्पष्ट व्याख्या के माध्यम से दूसरों को सिखाना पसंद है।',
-        'contact.title':'संपर्क करें','contact.lead':'एक संदेश भेजें — मैं सामान्यतः 24–48 घंटे में उत्तर देता हूँ।','contact.send':'संदेश भेजें'
-      }
-    };
-
-    // Apply translations
-    function applyLang(code){
-      const map = T[code]||T.en;
-      document.querySelectorAll('[data-key]').forEach(el=>{
-        const k = el.getAttribute('data-key');
-        if(!map[k]) return;
-        el.innerHTML = map[k];
-      });
-    }
-    const langSelect = document.getElementById('lang');
-    langSelect.addEventListener('change', ()=>applyLang(langSelect.value));
-    applyLang('en');
-
-    // Form (demo) — replace with your backend integration
-    document.getElementById('contactForm').addEventListener('submit', e=>{
-      e.preventDefault();
-      document.getElementById('formMsg').textContent = 'Thanks — message sent (demo).';
-      e.target.reset();
-    });
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
